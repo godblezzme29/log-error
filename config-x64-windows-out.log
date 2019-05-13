@@ -1,0 +1,127 @@
+[1/2] cmd /c "cd .. && "F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/bin/cmake.exe" "F:/vcpkg/buildtrees/zlib/src/1.2.11-f690224aeb" "-DSKIP_INSTALL_FILES=ON" "-DSKIP_BUILD_EXAMPLES=ON" "-DCMAKE_MAKE_PROGRAM=F:/Program Files (x86)/Microsoft Visual Studio/2017/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=F:/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_PLATFORM_TOOLSET=v141" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=F:/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Release" "-DCMAKE_INSTALL_PREFIX=F:/vcpkg/packages/zlib_x64-windows""
+FAILED: ../CMakeCache.txt 
+cmd /c "cd .. && "F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/bin/cmake.exe" "F:/vcpkg/buildtrees/zlib/src/1.2.11-f690224aeb" "-DSKIP_INSTALL_FILES=ON" "-DSKIP_BUILD_EXAMPLES=ON" "-DCMAKE_MAKE_PROGRAM=F:/Program Files (x86)/Microsoft Visual Studio/2017/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=F:/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_PLATFORM_TOOLSET=v141" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=F:/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Release" "-DCMAKE_INSTALL_PREFIX=F:/vcpkg/packages/zlib_x64-windows""
+CMake Warning at F:/vcpkg/scripts/buildsystems/vcpkg.cmake:107 (message):
+  There are no libraries installed for the Vcpkg triplet x64-windows.
+Call Stack (most recent call first):
+  F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:4 (project)
+
+
+CMake Warning (dev) at F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133 (file):
+  Policy CMP0053 is not set: Simplify variable reference and escape sequence
+  evaluation.  Run "cmake --help-policy CMP0053" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  For input:
+
+    '$ENV{PROGRAMFILES(x86)}'
+
+  the old evaluation rules produce:
+
+    'C:\Program Files (x86)'
+
+  but the new evaluation rules produce an error:
+
+    Syntax error in cmake code at
+      F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133
+    when parsing string
+      $ENV{PROGRAMFILES(x86)}
+    Invalid character ('(') in a variable name: 'PROGRAMFILES'
+
+  Using the old result for compatibility since the policy is not set.
+Call Stack (most recent call first):
+  F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:4 (project)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is MSVC 19.16.27030.1
+-- Check for working C compiler: F:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe
+CMake Error at F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133 (file):
+  Syntax error in cmake code at
+
+    F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133
+
+  when parsing string
+
+    $ENV{PROGRAMFILES(x86)}
+
+  Invalid character ('(') in a variable name: 'PROGRAMFILES'
+Call Stack (most recent call first):
+  F:/vcpkg/buildtrees/zlib/x64-windows-rel/CMakeFiles/3.14.0/CMakeSystem.cmake:6 (include)
+  F:/vcpkg/buildtrees/zlib/x64-windows-rel/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error at F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/share/cmake-3.14/Modules/CMakeTestCCompiler.cmake:44 (try_compile):
+  Failed to configure test project build system.
+Call Stack (most recent call first):
+  CMakeLists.txt:4 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "F:/vcpkg/buildtrees/zlib/x64-windows-rel/CMakeFiles/CMakeOutput.log".
+[2/2] cmd /c "cd ../../x64-windows-dbg && "F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/bin/cmake.exe" "F:/vcpkg/buildtrees/zlib/src/1.2.11-f690224aeb" "-DSKIP_INSTALL_FILES=ON" "-DSKIP_BUILD_EXAMPLES=ON" "-DCMAKE_MAKE_PROGRAM=F:/Program Files (x86)/Microsoft Visual Studio/2017/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=F:/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_PLATFORM_TOOLSET=v141" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=F:/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-DSKIP_INSTALL_HEADERS=ON" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Debug" "-DCMAKE_INSTALL_PREFIX=F:/vcpkg/packages/zlib_x64-windows/debug""
+FAILED: ../../x64-windows-dbg/CMakeCache.txt 
+cmd /c "cd ../../x64-windows-dbg && "F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/bin/cmake.exe" "F:/vcpkg/buildtrees/zlib/src/1.2.11-f690224aeb" "-DSKIP_INSTALL_FILES=ON" "-DSKIP_BUILD_EXAMPLES=ON" "-DCMAKE_MAKE_PROGRAM=F:/Program Files (x86)/Microsoft Visual Studio/2017/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" "-DBUILD_SHARED_LIBS=ON" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=F:/vcpkg/scripts/toolchains/windows.cmake" "-DVCPKG_TARGET_TRIPLET=x64-windows" "-DVCPKG_PLATFORM_TOOLSET=v141" "-DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON" "-DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=ON" "-DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=TRUE" "-DCMAKE_VERBOSE_MAKEFILE=ON" "-DVCPKG_APPLOCAL_DEPS=OFF" "-DCMAKE_TOOLCHAIN_FILE=F:/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DCMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION=ON" "-DVCPKG_CXX_FLAGS=" "-DVCPKG_CXX_FLAGS_RELEASE=" "-DVCPKG_CXX_FLAGS_DEBUG=" "-DVCPKG_C_FLAGS=" "-DVCPKG_C_FLAGS_RELEASE=" "-DVCPKG_C_FLAGS_DEBUG=" "-DVCPKG_CRT_LINKAGE=dynamic" "-DVCPKG_LINKER_FLAGS=" "-DCMAKE_INSTALL_LIBDIR:STRING=lib" "-DCMAKE_INSTALL_BINDIR:STRING=bin" "-DSKIP_INSTALL_HEADERS=ON" "-G" "Ninja" "-DCMAKE_BUILD_TYPE=Debug" "-DCMAKE_INSTALL_PREFIX=F:/vcpkg/packages/zlib_x64-windows/debug""
+CMake Warning at F:/vcpkg/scripts/buildsystems/vcpkg.cmake:107 (message):
+  There are no libraries installed for the Vcpkg triplet x64-windows.
+Call Stack (most recent call first):
+  F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:4 (project)
+
+
+CMake Warning (dev) at F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133 (file):
+  Policy CMP0053 is not set: Simplify variable reference and escape sequence
+  evaluation.  Run "cmake --help-policy CMP0053" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  For input:
+
+    '$ENV{PROGRAMFILES(x86)}'
+
+  the old evaluation rules produce:
+
+    'C:\Program Files (x86)'
+
+  but the new evaluation rules produce an error:
+
+    Syntax error in cmake code at
+      F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133
+    when parsing string
+      $ENV{PROGRAMFILES(x86)}
+    Invalid character ('(') in a variable name: 'PROGRAMFILES'
+
+  Using the old result for compatibility since the policy is not set.
+Call Stack (most recent call first):
+  F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake:93 (include)
+  CMakeLists.txt:4 (project)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is MSVC 19.16.27030.1
+-- Check for working C compiler: F:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe
+CMake Error at F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133 (file):
+  Syntax error in cmake code at
+
+    F:/vcpkg/scripts/buildsystems/vcpkg.cmake:133
+
+  when parsing string
+
+    $ENV{PROGRAMFILES(x86)}
+
+  Invalid character ('(') in a variable name: 'PROGRAMFILES'
+Call Stack (most recent call first):
+  F:/vcpkg/buildtrees/zlib/x64-windows-dbg/CMakeFiles/3.14.0/CMakeSystem.cmake:6 (include)
+  F:/vcpkg/buildtrees/zlib/x64-windows-dbg/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error at F:/vcpkg/downloads/tools/cmake-3.14.0-windows/cmake-3.14.0-win32-x86/share/cmake-3.14/Modules/CMakeTestCCompiler.cmake:44 (try_compile):
+  Failed to configure test project build system.
+Call Stack (most recent call first):
+  CMakeLists.txt:4 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "F:/vcpkg/buildtrees/zlib/x64-windows-dbg/CMakeFiles/CMakeOutput.log".
+ninja: build stopped: subcommand failed.
